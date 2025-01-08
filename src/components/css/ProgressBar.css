@@ -1,0 +1,46 @@
+/* ProgressBar.css */
+
+/* 容器 */
+.progress-bar-container {
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    gap: 10px; /* 標籤與進度條的間距 */
+    width: 100%;
+  }
+  
+  /* 進度標籤 */
+  .progress-label {
+    flex-shrink: 0; /* 防止標籤縮小，保持固定空間 */
+    font-size: 0.9rem;
+    color: #333;
+    text-align: left;
+    white-space: nowrap; /* 防止標籤換行 */
+    min-width: 50px; /* 預留空間，確保數值穩定不擠壓進度條 */
+  }
+  
+  /* 進度條容器 */
+  .progress-bar {
+    position: relative;
+    display: flex;
+    height: 10px;
+    flex-grow: 1; /* 讓進度條填滿剩餘空間 */
+    background-color: #ddd; /* 未完成部分顏色 */
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  /* 已完成部分 */
+  .progress-completed {
+    background-color: #5078ff; /* 已完成部分顏色 */
+    height: 100%;
+    transition: width 0.3s ease; /* 平滑動畫 */
+  }
+  
+  /* 未完成部分 */
+  .progress-remaining {
+    background-color: #ccc;
+    height: 100%;
+    flex-grow: 1;
+    transition: width 0.3s ease;
+  }
+  

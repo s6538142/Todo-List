@@ -1,0 +1,35 @@
+/* TodoInput.css */
+.todo-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 分隔 input 和按鈕 */
+    margin-top: 20px; /* 與上方保持距離 */
+
+}
+  
+.todo-input-container input {
+    flex-grow: 1; /* 填滿剩餘空間 */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px; /* 左側圓角 */
+    margin-right: -1px; /* 防止邊框重疊 */
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.addbtn{
+    background: #788fd2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+}
+
+.addbtn:hover{
+    background: #1035db;
+
+}
