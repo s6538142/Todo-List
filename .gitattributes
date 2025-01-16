@@ -1,7 +1,10 @@
-# 自動轉換lf格式
-
+# 自動轉換所有文本文件的行結尾
 * text=auto
+
+# 確保指定文件類型使用 LF 作為行結尾
 *.js text eol=lf
 *.css text eol=lf
 *.json text eol=lf
+
+# 確保 .gitattributes 自身使用 LF 作為行結尾
 .gitattributes text eol=lf
