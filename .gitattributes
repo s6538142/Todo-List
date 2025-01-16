@@ -1,0 +1,7 @@
+# 自動轉換lf格式
+
+* text=auto
+*.js text eol=lf
+*.css text eol=lf
+*.json text eol=lf
+.gitattributes text eol=lf
